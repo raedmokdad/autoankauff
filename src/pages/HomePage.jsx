@@ -159,7 +159,38 @@ function HomePage() {
         </div>
       </section>
 
-      {/* Social Proof Bar */}
+      {/* 3 Steps Process - Prominent */}
+      <section className="steps-process-section">
+        <div className="container">
+          <div className="steps-process-inner">
+            <div className="step-item-compact">
+              <div className="step-number-compact">1</div>
+              <div className="step-content-compact">
+                <h3 className="step-title-compact">Angebot</h3>
+                <p className="step-desc-compact">Sie schicken uns ein unverbindliches Angebot</p>
+              </div>
+            </div>
+            <div className="step-arrow">→</div>
+            <div className="step-item-compact">
+              <div className="step-number-compact">2</div>
+              <div className="step-content-compact">
+                <h3 className="step-title-compact">Kontakt</h3>
+                <p className="step-desc-compact">Wir melden uns bei Ihnen innerhalb von 24h</p>
+              </div>
+            </div>
+            <div className="step-arrow">→</div>
+            <div className="step-item-compact">
+              <div className="step-number-compact">3</div>
+              <div className="step-content-compact">
+                <h3 className="step-title-compact">Termin</h3>
+                <p className="step-desc-compact">Nach Einigung vereinbaren wir einen Abholtermin</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Social Proof Bar with Reviews */}
       <section className="social-proof-bar">
         <div className="container">
           <div className="proof-grid">

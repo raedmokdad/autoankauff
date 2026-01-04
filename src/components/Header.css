@@ -135,6 +135,46 @@
   background: linear-gradient(135deg, var(--primary-700) 0%, var(--primary-600) 100%);
 }
 
+/* Header Phone Number */
+.header-phone {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  font-weight: 700;
+  font-size: 1rem;
+  transition: all var(--transition-base);
+  box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
+  white-space: nowrap;
+  margin-left: 20px;
+}
+
+.header-phone:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+  background: linear-gradient(135deg, #ff5722 0%, #ff7733 100%);
+  color: white;
+}
+
+.header-phone:active {
+  transform: translateY(0);
+}
+
+.phone-icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.phone-text {
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+}
+
 .mobile-menu-btn {
   display: none;
   flex-direction: column;
@@ -173,9 +213,24 @@
   transform: rotate(-45deg) translate(8px, -8px);
 }
 
+@media (max-width: 1024px) {
+  .header-phone .phone-text {
+    display: none;
+  }
+
+  .header-phone {
+    padding: 10px;
+    margin-left: 12px;
+  }
+}
+
 @media (max-width: 768px) {
   .mobile-menu-btn {
     display: flex;
+  }
+
+  .header-phone {
+    display: none; /* Auf Mobile versteckt - WhatsApp-Button ist sichtbar */
   }
 
   .nav {
