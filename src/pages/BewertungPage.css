@@ -1,0 +1,315 @@
+/* Bewertung Hero with Green Background - Split Layout */
+.bewertung-hero-green {
+  background: linear-gradient(135deg, #2d6a4f 0%, #40916c 50%, #52b788 100%);
+  color: white;
+  padding: 80px 20px;
+  position: relative;
+  overflow: hidden;
+  min-height: 650px;
+}
+
+.bewertung-hero-green::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 30%, rgba(255, 255, 255, 0.08) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.bewertung-split-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.bewertung-left-content {
+  padding-right: 20px;
+}
+
+.hero-badge-green {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 20px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 100px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.bewertung-title-white {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 900;
+  line-height: 1.1;
+  margin-bottom: 24px;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.bewertung-subtitle-white {
+  font-size: clamp(1.1rem, 2vw, 1.3rem);
+  line-height: 1.6;
+  margin-bottom: 32px;
+  opacity: 0.95;
+}
+
+.bewertung-features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bewertung-features-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.check-icon-green {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  color: #d8f3dc;
+}
+
+.bewertung-right-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bewertung-form-box-white {
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  max-width: 500px;
+  color: var(--gray-900);
+}
+
+.form-title-bewertung {
+  font-size: 1.75rem;
+  font-weight: 900;
+  color: #1b4332;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.form-subtitle-bewertung {
+  font-size: 1rem;
+  color: var(--gray-600);
+  text-align: center;
+  margin-bottom: 32px;
+  font-weight: 500;
+}
+
+.bewertung-compact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group-bewertung {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group-bewertung label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--gray-800);
+}
+
+.form-group-bewertung select {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 1rem;
+  border: 2px solid var(--gray-300);
+  border-radius: var(--radius-lg);
+  background: white;
+  color: var(--gray-900);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.form-group-bewertung select:hover {
+  border-color: var(--primary-400);
+}
+
+.form-group-bewertung select:focus {
+  outline: none;
+  border-color: var(--primary-500);
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.1);
+}
+
+.form-group-bewertung select:disabled {
+  background: var(--gray-100);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.btn-bewertung-orange {
+  width: 100%;
+  padding: 16px 24px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%);
+  color: white;
+  border: none;
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 16px rgba(255, 107, 53, 0.3);
+  margin-top: 8px;
+}
+
+.btn-bewertung-orange:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(255, 107, 53, 0.4);
+  background: linear-gradient(135deg, #ff5722 0%, #ff7733 100%);
+}
+
+.btn-bewertung-orange svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Results Section */
+.estimation-result {
+  background: white;
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-2xl);
+  box-shadow: var(--shadow-xl);
+  border: 2px solid var(--primary-100);
+  margin-top: var(--spacing-2xl);
+}
+
+.estimation-result h2 {
+  font-size: 2em;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+  color: var(--primary-700);
+}
+
+.estimation-value {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+  padding: var(--spacing-xl);
+  background: linear-gradient(135deg, var(--primary-50) 0%, var(--primary-100) 100%);
+  border-radius: var(--radius-lg);
+}
+
+.estimation-main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+}
+
+.estimation-label {
+  font-size: 1.1em;
+  font-weight: 600;
+  color: var(--gray-700);
+}
+
+.estimation-amount {
+  font-size: 3em;
+  font-weight: 900;
+  color: var(--primary-700);
+  line-height: 1;
+}
+
+.estimation-range {
+  font-size: 1.1em;
+  color: var(--gray-600);
+  font-weight: 500;
+}
+
+.estimation-info {
+  background: var(--gray-50);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--spacing-xl);
+}
+
+.estimation-info p {
+  margin: 0;
+  line-height: 1.6;
+  color: var(--gray-700);
+}
+
+.estimation-actions {
+  display: flex;
+  gap: var(--spacing-md);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .bewertung-split-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .bewertung-left-content {
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .bewertung-features-list li {
+    justify-content: center;
+  }
+
+  .bewertung-form-box-white {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .bewertung-hero-green {
+    padding: 50px 16px;
+  }
+
+  .bewertung-form-box-white {
+    padding: 28px 24px;
+  }
+
+  .form-title-bewertung {
+    font-size: 1.5rem;
+  }
+
+  .estimation-amount {
+    font-size: 2.5em;
+  }
+
+  .estimation-actions {
+    flex-direction: column;
+  }
+
+  .estimation-actions .btn {
+    width: 100%;
+  }
+}
